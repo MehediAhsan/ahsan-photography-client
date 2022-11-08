@@ -18,8 +18,7 @@ const Home = () => {
             <div className='mb-20'>
                 <div className='w-7/12 mx-auto flex flex-col gap-5 text-center'>
                     <p className='text-2xl font-bold text-orange-600'>Service</p>
-                    <h1 className='text-5xl font-bold'>Our Service Area</h1>
-                    <p className='font-semibold text-gray-600'>the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    <h1 className='text-4xl text-gray-700 font-bold'>My Services</h1>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 px-10'>
                     {
