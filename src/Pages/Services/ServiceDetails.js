@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Reviews from '../Reviews/Reviews';
 
 const ServiceDetails = () => {
     const service = useLoaderData();
@@ -11,6 +12,7 @@ const ServiceDetails = () => {
                 <img src={img} alt="" />
                 <p className='text-gray-700'>{description}</p>
             </div>
+            <Reviews service={service}></Reviews>
         </div>
     );
 };
