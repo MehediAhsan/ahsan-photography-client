@@ -68,16 +68,7 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-              >
-                Pricing
-              </a>
-            </li>
+            
             <li>
               <a
                 href="/"
@@ -92,6 +83,26 @@ const Header = () => {
               {
                 user ?
                 <>
+                  <li>
+                    <Link
+                      to="/reviews"
+                      aria-label="Product pricing"
+                      title="Product pricing"
+                      className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >
+                      My reviews
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/addservice"
+                      aria-label="Product pricing"
+                      title="Product pricing"
+                      className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >
+                      Add service
+                    </Link>
+                  </li>
                   <li>
                     <button onClick={handleLogOut}
                       className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
