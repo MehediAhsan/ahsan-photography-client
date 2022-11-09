@@ -31,8 +31,28 @@ const Login = () => {
             console.log(user);
             form.reset();
             setError('');
-            navigate(from, {replace:true});
-            toast.success('Successfully Login');
+
+            const currentUser = {
+                email: user.email
+            }
+
+            // get jwt token
+
+            fetch('http://localhost:5000/jwt', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                localStorage.setItem('token', data.token);
+                navigate(from, {replace: true});
+                toast.success('Successfully Login');
+            })
+            
         })
         .catch( error => {
             console.error(error);
@@ -44,9 +64,29 @@ const Login = () => {
         providerLogin(googleProvider)
         .then( result => {
             const user = result.user;
-            console.log(user);
-            navigate(from, {replace:true});
-            toast.success('Successfully Login');
+            console.log(user);                       
+
+            const currentUser = {
+                email: user.email
+            }
+
+            // get jwt token
+
+            fetch('http://localhost:5000/jwt', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                localStorage.setItem('token', data.token);
+                navigate(from, {replace: true});
+                toast.success('Successfully Login');
+            })
+            
         })
         .catch( error => {
             console.error(error);
@@ -61,8 +101,28 @@ const Login = () => {
         .then( result => {
             const user = result.user;
             console.log(user);
-            navigate(from, {replace:true});
-            toast.success('Successfully Login');
+
+            const currentUser = {
+                email: user.email
+            }
+
+            // get jwt token
+
+            fetch('http://localhost:5000/jwt', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                localStorage.setItem('token', data.token);
+                navigate(from, {replace: true});
+                toast.success('Successfully Login');
+            })
+            
         })
         .catch( error => {
             console.error(error);
