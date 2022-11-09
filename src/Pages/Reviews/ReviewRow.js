@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ReviewRow = ({review, handleDelete}) => {
     const {_id, serviceName, reviewer, message} = review;
@@ -9,7 +10,9 @@ const ReviewRow = ({review, handleDelete}) => {
             <td class="p-2 md:border md:border-grey-500 text-left block md:table-cell"><span class="inline-block w-1/3 md:hidden font-bold">Review</span>{message}</td>
             <td class="p-2 md:border md:border-grey-500 text-left block md:table-cell">
                 <span class="inline-block w-1/3 md:hidden font-bold">Actions</span>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-1 px-2 border-blue-500 rounded mr-2">Edit</button>
+                <Link to={`/update/${_id}`}>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-1 px-2 border-blue-500 rounded mr-2">Edit</button>
+                </Link>
                 <button onClick={ () => handleDelete(_id) } class="bg-red-500 hover:bg-red-600 text-white font-semibold py-1 px-2 border-red-500 rounded">Delete</button>
             </td>
         </tr>

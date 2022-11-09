@@ -36,7 +36,7 @@ const Reviews = ({service}) => {
         .then( res => res.json())
         .then( data => {
             if(data.acknowledged){
-                toast.success('Review successfully');
+                toast.success('Review added successfully');
                 form.reset();
             }
         })

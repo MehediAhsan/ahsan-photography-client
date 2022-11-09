@@ -32,7 +32,7 @@ const MyReviews = () => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your file has been deleted.',
+                                'Your review has been deleted.',
                                 'success'
                             );
                             const remaining = reviews.filter(rvw => rvw._id !== id);
