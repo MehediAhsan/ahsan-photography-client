@@ -55,7 +55,7 @@ const MyReviews = () => {
     }
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto my-14'>
             {
                 reviews.length !== 0 ?
                 <>

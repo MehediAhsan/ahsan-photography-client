@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 import ServiceCard from '../Services/ServiceCard';
 import Banner from './Banner/Banner';
+import Gallery from './Gallery/Gallery';
+import Testimonial from './Testimonial/Testimonial';
 
 const Home = () => {
     const [services, setServices] = useState([]);
@@ -33,6 +35,8 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
+            <Gallery></Gallery>
+            <Testimonial></Testimonial>
         </div>
     );
 };

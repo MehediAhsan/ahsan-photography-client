@@ -134,21 +134,21 @@ const Login = () => {
 
     return (
         <div>
-            <div className="w-full max-w-md p-8 space-y-3 rounded dark:bg-gray-900 dark:text-gray-100 mx-auto my-5">
+            <div className="w-full max-w-md p-8 space-y-3 rounded dark:text-gray-700 mx-auto my-5 border">
                 <h1 className="text-3xl font-semibold text-center pb-3">Login</h1>
                 <form onSubmit={handleSubmit} className="space-y-6 ng-untouched ng-pristine ng-valid">
                     <div>
                         <label className="block mb-2 text-sm">Email address</label>
-                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" required />
+                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-100 dark:text-gray-700" required />
                     </div>
                     <div className="space-y-1 text-sm">
                         <label className="block mb-2 text-sm">Password</label>
-                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" required />
+                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border dark:border-gray-300 dark:bg-gray-100 dark:text-gray-700 focus:dark:border-violet-400" required />
                         <div className="flex justify-end text-xs dark:text-gray-400">
                             <Link rel="noopener noreferrer" href="#">Forgot Password?</Link>
                         </div>
                     </div>
-                    <button type='submit' className="block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400 font-semibold">Login</button>
+                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-white text-lg dark:bg-orange-400 font-semibold">Login</button>
                     <p className='text-red-500'>
                         {error}
                     </p>
@@ -168,8 +168,8 @@ const Login = () => {
                         <p>Login with GitHub</p>
                     </button>
                 </div>
-                <p className="px-6 text-sm text-center dark:text-gray-400">Don't have an account yet?
-				<Link rel="noopener noreferrer" to="/register" className="hover:underline dark:text-violet-400">Sign up</Link>.
+                <p className="px-6 text-sm text-center dark:text-gray-600">Don't have an account yet?
+				<Link rel="noopener noreferrer" to="/register" className="hover:underline dark:text-violet-600">Sign up</Link>.
 			    </p>
             </div>
         </div>

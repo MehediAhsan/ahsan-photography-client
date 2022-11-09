@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Banner = () => {
     return (
-        <div className="relative w-full my-10">
+        <div className="relative w-full lg:my-10">
             <div className='px-5 md:px-0'>
                 <img src="https://images.unsplash.com/photo-1464855499786-2839659d9e5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="" className="w-full rounded-xl" />
             </div>

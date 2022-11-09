@@ -46,31 +46,31 @@ const AddService = () => {
     }
 
     return (
-        <div className="p-6 dark:text-gray-100">
-            <form onSubmit={handleAddService} novalidate="" className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow dark:bg-gray-700 ng-untouched ng-pristine ng-valid">
+        <div className="p-6 dark:text-gray-100 my-10">
+            <form onSubmit={handleAddService} novalidate="" className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow border ng-untouched ng-pristine ng-valid text-gray-700">
                 <h2 className="w-full text-3xl font-semibold leading-tight">Please Add service</h2>
                 <div>
                     <label for="name" className="block mb-1 ml-1">Name</label>
-                    <input id="name" type="text" name='name' placeholder="Service Name" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800" />
+                    <input id="name" type="text" name='name' placeholder="Service Name" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-100 text-gray-700 border-gray-500" />
                 </div>
                 <div>
                     <label for="img" className="block mb-1 ml-1">ImageURL</label>
-                    <input id="img" type="text" name='img' placeholder="ImageURL" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800" />
+                    <input id="img" type="text" name='img' placeholder="ImageURL" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-100 text-gray-700" />
                 </div>
                 <div>
                     <label for="description" className="block mb-1 ml-1">Description</label>
-                    <textarea id="description" type="text" name='description' placeholder="Description..." className="block w-full p-2 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800"></textarea>
+                    <textarea id="description" type="text" name='description' placeholder="Description..." className="block w-full p-2 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-100 text-gray-700"></textarea>
                 </div>
                 <div>
                     <label for="price" className="block mb-1 ml-1">Price</label>
-                    <input id="price" type="number" name='price' placeholder="Price" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800" />
+                    <input id="price" type="number" name='price' placeholder="Price" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-100 text-gray-700" />
                 </div>
                 <div>
                     <label for="rating" className="block mb-1 ml-1">Rating</label>
-                    <input id="rating" type="number" name='rating' placeholder="Rating" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800" />
+                    <input id="rating" type="number" name='rating' placeholder="Rating" required="" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-100 text-gray-700" />
                 </div>
                 <div>
-                    <button type="submit" className="w-full px-4 py-2 font-semibold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-blue-500 focus:ring-blue-400 hover:ring-blue-600 dark:text-gray-900">Add Service</button>
+                    <button type="submit" className="w-full px-4 py-2 font-semibold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-orange-500 focus:ring-orange-400 hover:ring-orange-300 text-white">Add Service</button>
                 </div>
             </form>
         </div>
