@@ -48,7 +48,7 @@ const Reviews = ({service}) => {
         fetch(`http://localhost:5000/reviews/${_id}`)
         .then(res => res.json())
         .then(data => setReviews(data))
-    }, [_id])
+    }, [_id, reviews])
 
     return (
         <div className='border border-orange-200 lg:w-9/12 mx-auto shadow-lg p-6 mb-10'>

@@ -1,10 +1,12 @@
 import React from 'react';
 import Swal from 'sweetalert2';
 import { useLoaderData, useNavigate } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const UpdateReview = () => {
     const storedReview = useLoaderData();
     const navigate = useNavigate();
+    useTitle('Update Review');
     
     const handleUpdateReview = event => {
         event.preventDefault();
