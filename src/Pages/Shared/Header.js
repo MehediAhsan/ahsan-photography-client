@@ -29,8 +29,8 @@ const Header = () => {
             title="Ahsan Photography"
             className="inline-flex items-center"
           >
-            <img className='w-14' src={logo} alt="" />
-            <span className="ml-2 text-2xl font-bold tracking-wide text-orange-500 font-Berkshire">
+            <img className='w-8 md:w-14' src={logo} alt="" />
+            <span className="ml-2 text-xl md:text-2xl font-bold tracking-wide text-orange-500 font-Berkshire">
               Ahsan Photography
             </span>
           </Link>
@@ -92,7 +92,7 @@ const Header = () => {
                   </li>
                   <li>
                     <button onClick={handleLogOut}
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Login"
                       title="Login"
                     >
@@ -149,7 +149,7 @@ const Header = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
+              <div className="absolute z-50 top-0 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -240,7 +240,7 @@ const Header = () => {
                   </li>
                   <li>
                     <button onClick={handleLogOut}
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Login"
                       title="Login"
                     >

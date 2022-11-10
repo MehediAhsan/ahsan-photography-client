@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useTitle from '../../hooks/useTitle';
 
 const AddService = () => {
     useTitle('Add Service');
+    const navigate = useNavigate();
 
     const handleAddService = event => {
         event.preventDefault();
@@ -24,7 +26,7 @@ const AddService = () => {
 
         console.log(service);
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://ahsan-photography-server.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -40,6 +42,7 @@ const AddService = () => {
                     'success'
                   )
                 form.reset();
+                navigate('/');
             }
         })
         .catch( error => console.error(error))

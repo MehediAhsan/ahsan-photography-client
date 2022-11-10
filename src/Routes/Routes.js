@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             {
                 path: '/services/:id',
                 element: <ServiceDetails></ServiceDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({params}) => fetch(`https://ahsan-photography-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/reviews',
@@ -42,7 +42,7 @@ export const router = createBrowserRouter([
             {
                 path: '/update/:id',
                 element: <UpdateReview></UpdateReview>,
-                loader: ({params}) => fetch(`http://localhost:5000/review/${params.id}`)
+                loader: ({params}) => fetch(`https://ahsan-photography-server.vercel.app/review/${params.id}`)
             },
             {
                 path: '/blog',

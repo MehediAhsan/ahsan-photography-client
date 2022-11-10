@@ -3,7 +3,7 @@ import React from 'react';
 const Gallery = () => {
     return (
         <div>
-            <h1 className='text-4xl font-bold text-center text-gray-700'>Latest <span className='text-orange-500'>Click</span></h1> 
+            <h1 className='text-2xl md:text-4xl font-bold text-center text-gray-700'>Latest <span className='text-orange-500'>Click</span></h1> 
             <section className="py-6 dark:text-gray-50">
             <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
                 <img src="https://source.unsplash.com/random/301x301/" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" />

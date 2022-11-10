@@ -17,7 +17,7 @@ const UpdateReview = () => {
             message
         }
 
-        fetch(`http://localhost:5000/reviews/${storedReview._id}`, {
+        fetch(`https://ahsan-photography-server.vercel.app/reviews/${storedReview._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

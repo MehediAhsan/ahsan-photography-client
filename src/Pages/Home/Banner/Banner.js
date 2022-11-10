@@ -1,30 +1,49 @@
 import React from 'react';
 import './Banner.css';
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className="relative w-full lg:my-10">
-            <div className='px-5 md:px-0'>
-                <img src="https://images.unsplash.com/photo-1464855499786-2839659d9e5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="" className="w-full rounded-xl" />
-            </div>
-            <div className="absolute flex justify-end transform -translate-y-1/2 left-20 top-1/2 flex-col gap-2 md:gap-6 lg:gap-8">
-                <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold text-white'>
-                    Ahsan <br className='hidden md:block' />
-                    Photgraphy <br />
-                    Services
-                </h1>
-                <p className='text-xs md:text-lg lg:text-xl text-white w-7/12'>
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="flex flex-col items-center justify-between lg:flex-row">
+        <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
+          <div className="max-w-xl mb-6">
+            <h2 className="mb-6 font-sans text-3xl font-bold text-gray-700 sm:text-4xl">
+                Welcome, <br /> Ahsan Photography <br/>Services
+            </h2>
+            <p className="text-base text-gray-700 md:text-lg">
                 I specialize in wedding, sports, portrait, event photography.
-                </p>
-                <div className='hidden sm:block'>
-                    <button className='h-7 md:h-8 lg:h-10 px-2 md:px-3 lg:px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-orange-600 focus:shadow-outline focus:outline-none mr-5 flex justify-center items-center'>
-                        <span>Explore More</span>
-                        <FaArrowRight className='h-4 w-4 text-white ml-1'></FaArrowRight>
-                    </button>      
-                </div>
+            </p>
+          </div>
+          <div className="">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center h-11 px-3 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-orange-500 hover:bg-orange-600 focus:shadow-outline focus:outline-none"
+            >
+              <span className="mr-1">Explore More</span>
+              <FaArrowRight className='h-4 w-4 text-white'></FaArrowRight>
+            </Link>
+          </div>
+        </div>
+        <div className="relative lg:w-1/2">
+          <img
+            className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+            src="https://images.unsplash.com/photo-1534455700361-eca9c3dbc981?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+          />
+          <Link
+            to="/"
+            aria-label="Play Video"
+            className="absolute inset-0 flex items-center justify-center w-full h-full transition-colors duration-300 bg-gray-900 bg-opacity-50 group"
+          >
+            <div className="flex items-center justify-center w-16 h-16 transition duration-300 transform rounded-full shadow-2xl group-hover:scale-110">
+              
             </div>
-        </div> 
+          </Link>
+        </div>
+      </div>
+    </div>
     );
 };
 
