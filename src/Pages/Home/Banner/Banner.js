@@ -18,7 +18,7 @@ const Banner = () => {
           </div>
           <div className="">
             <Link
-              to="/"
+              to="/services"
               className="inline-flex items-center justify-center h-11 px-3 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-orange-500 hover:bg-orange-600 focus:shadow-outline focus:outline-none"
             >
               <span className="mr-1">Explore More</span>

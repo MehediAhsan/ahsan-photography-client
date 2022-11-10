@@ -7,9 +7,10 @@ import { useState } from 'react';
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import toast from 'react-hot-toast';
 import useTitle from '../../../hooks/useTitle';
+import Loader from '../../Loader/Loader';
 
 const Login = () => {
-    const {signIn, providerLogin, setLoading} = useContext(AuthContext);
+    const {signIn, providerLogin, setLoading, loading} = useContext(AuthContext);
     const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
@@ -148,7 +149,18 @@ const Login = () => {
                             <Link rel="noopener noreferrer" href="#">Forgot Password?</Link>
                         </div>
                     </div>
-                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-white text-lg dark:bg-orange-400 font-semibold">Login</button>
+                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-white text-lg dark:bg-orange-400 font-semibold">
+                        {
+                            loading ? 
+                            <div className="flex items-center justify-center space-x-2">
+                                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-orange-100"></div>
+                                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-orange-100"></div>
+                                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-orange-100"></div>
+                            </div>
+                             : 
+                            'Login'
+                        }
+                    </button>
                     <p className='text-red-500'>
                         {error}
                     </p>

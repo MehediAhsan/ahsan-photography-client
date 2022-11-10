@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 import useTitle from '../../../hooks/useTitle';
 
 const Register = () => {
-    const {createUser, updateUserProfile} = useContext(AuthContext);
+    const {createUser, updateUserProfile, loading} = useContext(AuthContext);
     const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
@@ -94,7 +94,18 @@ const Register = () => {
                         <label className="block mb-2 text-sm">Password</label>
                         <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border dark:border-gray-300 dark:bg-gray-100 dark:text-gray-700 focus:dark:border-violet-400" required />
                     </div>
-                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-white text-lg dark:bg-orange-400 font-semibold">Sign up</button>
+                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-white text-lg dark:bg-orange-400 font-semibold">
+                        {
+                            loading ? 
+                            <div className="flex items-center justify-center space-x-2">
+                                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-orange-100"></div>
+                                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-orange-100"></div>
+                                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-orange-100"></div>
+                            </div>
+                             : 
+                            'Sign up'
+                        }
+                    </button>
                     <p className='text-red-500'>
                         {error}
                     </p>
