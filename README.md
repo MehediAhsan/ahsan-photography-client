@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Ahsan Photography
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I provide different types of photography services by this site. I include different types of services wedding, sports, portrait, event photography etc.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Live Link
+Hosted in Firebase -> [Ahsan Photography](https://ahsan-photography.web.app/)
 
-### `npm start`
+## Project Features and Functionality:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add a navbar section where we can see different route(home, services, blog, my reviews, add service, login) 
+- The services section includes different types photography service  
+- Each service is clickable when we click one service is show the detail of this service
+- Service details page has two section details section and review section
+- In review section users can see others reviews and also add review
+- My review section user can his reviews and he can update and delete his review
+- Add service section user can add different kind of services in homepage
+- Blog section provide different types of question and answer 
+- We add login and registration page also login page provide google and github login
+- When a user login then user can show his photo in the navbar and also see my reviews, add service and logout option
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Use Resources
+Framework -> [Tailwindcss](https://tailwindcss.com/)
 
-### `npm test`
+Tailwind Components -> [Kitwind](https://kitwind.io/products/kometa/components)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tailwind Components -> [Mamba UI](https://www.mambaui.com/components)
 
-### `npm run build`
+Icon -> [ReactIcons](https://react-icons.github.io/react-icons/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Toast -> [ReactHotToast](https://react-hot-toast.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tooltip -> [Tooltip](https://www.npmjs.com/package/react-tippy)

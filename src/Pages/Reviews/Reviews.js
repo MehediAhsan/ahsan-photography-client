@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import Loader from '../Loader/Loader';
 import ReviewCard from './ReviewCard';
 
 const Reviews = ({service}) => {
@@ -9,6 +10,7 @@ const Reviews = ({service}) => {
     const {_id, name} = service;
     const [reviews, setReviews] = useState([]);
     const location = useLocation();
+    const [loader, setLoader] = useState(true);
 
     const handleAddReview = event => {
         event.preventDefault();
@@ -50,15 +52,21 @@ const Reviews = ({service}) => {
     useEffect( () => {
         fetch(`https://ahsan-photography-server.vercel.app/reviews/${_id}`)
         .then(res => res.json())
-        .then(data => setReviews(data))
+        .then(data => {
+            setReviews(data)
+            setLoader(false)
+        })
     }, [_id, reviews])
 
     return (
         <div className='border border-orange-200 lg:w-9/12 mx-auto shadow-lg p-6 mb-10'>
+            {
+                loader && <Loader></Loader>
+            }
             <h1 className='text-2xl md:text-3xl font-semibold text-center my-5 text-gray-700'>
                 {
                     reviews.length > 0 ?
-                    <span>Recent Reviews</span>
+                    <span>Service Reviews</span>
                     :
                     <span>No Reviews</span>
                 }
