@@ -21,7 +21,7 @@ const Header = () => {
   }
 
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-0">
         <div className="relative flex items-center justify-between">
           <Link
             to="/"
@@ -30,7 +30,7 @@ const Header = () => {
             className="inline-flex items-center"
           >
             <img className='w-8 md:w-14' src={logo} alt="" />
-            <span className="ml-2 text-xl md:text-2xl font-bold tracking-wide text-orange-500 font-Berkshire">
+            <span className="ml-2 text-xl md:text-2xl font-semibold tracking-wide text-orange-500 font-Berkshire">
               Ahsan Photography
             </span>
           </Link>
@@ -92,7 +92,7 @@ const Header = () => {
                   </li>
                   <li>
                     <button onClick={handleLogOut}
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Login"
                       title="Login"
                     >
@@ -115,7 +115,7 @@ const Header = () => {
                   <li>
                     <Link
                       to="/login"
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Login"
                       title="Login"
                     >
@@ -240,7 +240,7 @@ const Header = () => {
                   </li>
                   <li>
                     <button onClick={handleLogOut}
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Login"
                       title="Login"
                     >
@@ -263,7 +263,7 @@ const Header = () => {
                   <li>
                     <Link
                       to="/login"
-                      className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Login"
                       title="Login"
                     >

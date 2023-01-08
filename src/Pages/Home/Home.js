@@ -7,6 +7,10 @@ import Gallery from './Gallery/Gallery';
 import Testimonial from './Testimonial/Testimonial';
 import { FaArrowRight } from "react-icons/fa";
 import Loader from '../Loader/Loader';
+import Contact from './Contact';
+import Team from './Team';
+import Others from './Others';
+import Stats from './Stats';
 
 const Home = () => {
     const [services, setServices] = useState([]);
@@ -27,12 +31,12 @@ const Home = () => {
             <Banner></Banner>
             <div className='mb-20 mt-10'>
                 <div className='w-7/12 mx-auto flex flex-col gap-5 text-center'>
-                    <h1 className='text-2xl md:text-4xl text-gray-700 font-bold'>My <span className='text-orange-500'>Services</span></h1>
+                    <h1 className='text-2xl md:text-3xl text-gray-700 font-bold'>My <span className='text-orange-500'>Services</span></h1>
                 </div>
                 {
                     loader && <Loader></Loader>
                 }
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 px-6 md:px-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 px-6 md:px-3'>
                     {
                         services.map( service => <ServiceCard key={service._id} service={service}></ServiceCard>)
                     }
@@ -47,7 +51,11 @@ const Home = () => {
                 </div>
             </div>
             <Gallery></Gallery>
+            <Team></Team>
+            <Stats></Stats>
+            <Others></Others>
             <Testimonial></Testimonial>
+            <Contact></Contact>
         </div>
     );
 };
