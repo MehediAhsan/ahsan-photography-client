@@ -29,7 +29,7 @@ const Home = () => {
     return (
         <div className='container mx-auto'>
             <Banner></Banner>
-            <div className='mb-20 mt-10'>
+            <div className='mb-20 mt-28'>
                 <div className='w-7/12 mx-auto flex flex-col gap-5 text-center'>
                     <h1 className='text-2xl md:text-3xl text-gray-700 font-bold'>My <span className='text-orange-500'>Services</span></h1>
                 </div>
