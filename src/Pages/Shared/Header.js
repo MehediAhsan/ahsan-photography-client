@@ -21,7 +21,7 @@ const Header = () => {
   }
 
     return (
-        <div className="shadow-lg">
+        <div className="shadow-lg sticky top-0 z-50 bg-gray-100">
         <div className='container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-0 px-4 py-4 '>
         <div className="relative flex items-center justify-between">
           <Link
@@ -30,7 +30,7 @@ const Header = () => {
             title="Ahsan Photography"
             className="inline-flex items-center"
           >
-            <img className='w-8 md:w-14' src={logo} alt="" />
+            <img className='w-8 md:w-10' src={logo} alt="" />
             <span className="ml-2 text-xl md:text-2xl font-semibold tracking-wide text-orange-500 font-Berkshire">
               Ahsan Photography
             </span>
@@ -151,7 +151,7 @@ const Header = () => {
             </button>
             {isMenuOpen && (
               <div className="absolute z-50 top-0 left-0 w-full">
-                <div className="p-5 bg-white border rounded shadow-sm">
+                <div className="p-5 bg-gray-100 border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <Link
