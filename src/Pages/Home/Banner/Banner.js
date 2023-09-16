@@ -1,35 +1,58 @@
 import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 import './Banner.css';
-import { FaArrowRight } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-import bg from '../../../assets/bg.jpg';
 
 const Banner = () => {
-    return (
-        <div className="flex items-center h-screen w-full bg-cover bg-no-repeat px-4 mx-auto md:px-10 lg:px-2" style={{backgroundImage: `url(${bg})`, width:'100%'}}>
-      <div className="flex flex-col items-center justify-between lg:flex-row">
-        <div className=" mb-10 lg:max-w-lg ml-6 md:ml-16 lg:mb-0">
-          <div className="max-w-xl mb-6">
-            <h2 className="mb-6 font-sans text-2xl font-bold text-white sm:text-3xl">
-                Welcome, <br /> Ahsan Photography <br/>Services
-            </h2>
-            <p className="text-base text-white md:text-base max-w-sm">
-                I specialize in wedding, sports, portrait, event photography.
-            </p>
-          </div>
-          <div className="">
-            <Link
-              to="/services"
-              className="inline-flex items-center justify-center h-9 px-2 mb-3 font-medium text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-orange-500 hover:bg-orange-600 focus:shadow-outline focus:outline-none"
-            >
-              <span className="mr-1">Explore</span>
-              <FaArrowRight className='h-4 w-3 text-white'></FaArrowRight>
-            </Link>
+  const slideshowData = [
+      {
+        "imageSrc": "https://source.unsplash.com/800x600/?photography",
+        "title": "Capture Unforgettable Moments",
+        "description": "Let us freeze your precious moments in time with our professional photography services. Whether it's a wedding, a special event, or a portrait session, we've got you covered.",
+        "buttonText": "Learn More"
+      },
+      {
+        "imageSrc": "https://source.unsplash.com/800x600/?portrait",
+        "title": "Explore Our Portrait Photography",
+        "description": "Discover the artistry and creativity in our portrait photography work. Our photographers specialize in capturing your unique personality.",
+        "buttonText": "Explore"
+      },
+      {
+        "imageSrc": "https://source.unsplash.com/800x600/?wedding",
+        "title": "Book Your Wedding Photography",
+        "description": "Ready to tie the knot? We'll be there to capture every magical moment of your wedding day. Contact us now to reserve your wedding photography session!",
+        "buttonText": "Get Started"
+      }
+        
+  ]
+  
+  return (
+    <Carousel
+      showArrows={false}
+      showThumbs={false}
+      autoPlay={true}
+      infiniteLoop={true}
+      interval={5000}
+      stopOnHover={false}
+      transitionTime={1000}
+    >
+      {slideshowData.map((slide, index) => (
+        <div className="relative" key={index}>
+          <div className="bg-black absolute inset-0 opacity-80"></div> {/* Black shadow */}
+          <img src={slide.imageSrc} alt={`Slide ${index + 1}`} />
+          <div className="absolute inset-0 flex items-center justify-center text-white bg-opacity-80">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold mb-4">{slide.title}</h1>
+              <p className="text-lg mb-6">{slide.description}</p>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full transition duration-300 ease-in-out">
+                {slide.buttonText}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    );
+      ))}
+    </Carousel>
+  );
 };
 
 export default Banner;
