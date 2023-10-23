@@ -11,9 +11,10 @@ const ServiceDetails = () => {
 
     return (
         <div className='container mx-auto'>
-            <div className='p-6 my-10 shadow-lg flex flex-col gap-6 border-2 border-orange-200 lg:w-9/12 mx-auto'>
+            <div className='p-10 my-10 shadow-lg flex flex-col md:flex-row gap-6 border-2 border-orange-200 mx-auto'>
+                <img src={img} alt="" className='w-1/2' />
+                <div className='flex flex-col gap-5'>
                 <h1 className='text-3xl md:text-4xl font-semibold text-center text-gray-700'>{name}</h1>
-                <img src={img} alt="" />
                 <p className='text-gray-700'>{description}</p>
                 <div className='flex justify-between'>
                     <div className='flex justify-center items-center gap-2'>
@@ -23,6 +24,7 @@ const ServiceDetails = () => {
                     <div className='text-gray-700 text-xl'>
                         ${price}
                     </div>
+                </div>
                 </div>
             </div>
             <Reviews service={service}></Reviews>
