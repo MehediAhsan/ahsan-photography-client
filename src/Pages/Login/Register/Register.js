@@ -75,7 +75,7 @@ const Register = () => {
 
     return (
         <div>
-            <div className="w-full max-w-md p-8 space-y-3 rounded border dark:text-gray-700 mx-auto my-10">
+            <div className="w-full max-w-md p-12 shadow-xl space-y-3 rounded border dark:text-gray-700 mx-auto my-10">
                 <h1 className="text-3xl font-semibold text-center pb-3">Sign up</h1>
                 <form onSubmit={handleSubmit} className="space-y-6 ng-untouched ng-pristine ng-valid">
                     <div>
