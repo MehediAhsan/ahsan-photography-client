@@ -21,7 +21,7 @@ const Header = () => {
   }
 
     return (
-        <div className="shadow-lg sticky top-0 z-50 bg-gray-100">
+        <div className="shadow-lg sticky inset-0 z-50 bg-rose-100 opacity-80">
         <div className='container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-0 px-4 py-4 '>
         <div className="relative flex items-center justify-between">
           <Link
@@ -31,7 +31,7 @@ const Header = () => {
             className="inline-flex items-center"
           >
             <img className='w-8 md:w-10' src={logo} alt="" />
-            <span className="ml-2 text-xl md:text-2xl font-semibold tracking-wide text-orange-500 font-Berkshire">
+            <span className="ml-2 text-xl md:text-2xl font-semibold tracking-wide text-orange-500 font-Berkshire ">
               Ahsan Photography
             </span>
           </Link>
@@ -41,7 +41,7 @@ const Header = () => {
                 to="/"
                 aria-label="Home"
                 title="Home"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Home
               </Link>
@@ -51,7 +51,7 @@ const Header = () => {
                 to="/services"
                 aria-label="Services"
                 title="Services"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Services
               </Link>
@@ -62,7 +62,7 @@ const Header = () => {
                 to="/blog"
                 aria-label="Blog"
                 title="Blog"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Blog
               </Link>
@@ -76,7 +76,7 @@ const Header = () => {
                       to="/reviews"
                       aria-label="My reviews"
                       title="My reviews"
-                      className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
                     >
                       My reviews
                     </Link>
@@ -86,7 +86,7 @@ const Header = () => {
                       to="/addservice"
                       aria-label="Add service"
                       title="Add service"
-                      className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
                     >
                       Add service
                     </Link>
@@ -189,7 +189,7 @@ const Header = () => {
                 to="/"
                 aria-label="Home"
                 title="Home"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Home
               </Link>
@@ -199,7 +199,7 @@ const Header = () => {
                 to="/services"
                 aria-label="Services"
                 title="Services"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Services
               </Link>
@@ -210,7 +210,7 @@ const Header = () => {
                 to="/blog"
                 aria-label="Blog"
                 title="Blog"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Blog
               </Link>
@@ -224,7 +224,7 @@ const Header = () => {
                       to="/reviews"
                       aria-label="My reviews"
                       title="My reviews"
-                      className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
                     >
                       My reviews
                     </Link>
@@ -234,7 +234,7 @@ const Header = () => {
                       to="/addservice"
                       aria-label="Add service"
                       title="Add service"
-                      className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      className="font-medium tracking-wide text-gray-900 uppercase transition-colors duration-200 hover:text-deep-purple-accent-400"
                     >
                       Add service
                     </Link>

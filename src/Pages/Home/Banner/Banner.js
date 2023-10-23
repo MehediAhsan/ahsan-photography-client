@@ -38,8 +38,8 @@ const Banner = () => {
       className="w-full md:h-screen"
     >
       {slideshowData.map((slide, index) => (
-        <div className="relative md:w-10/12" key={index}>
-          <div className="bg-black absolute inset-0 opacity-80"></div> {/* Black shadow */}
+        <div className="relative md:w-12/12" key={index}>
+          <div className="bg-black absolute inset-0 opacity-70"></div> {/* Black shadow */}
           <img src={slide.imageSrc} alt={`Slide ${index + 1}`} className="w-full h-auto md:h-full object-cover" loading="lazy" />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-opacity-80">
             <div className="text-center mx-4">
