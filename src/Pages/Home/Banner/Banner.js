@@ -44,8 +44,8 @@ const Banner = () => {
           <div className="absolute inset-0 flex items-center justify-center text-white bg-opacity-80">
             <div className="text-center mx-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">{slide.title}</h1>
-              <p className="text-lg md:text-xl lg:text-2xl mb-6 md:w-8/12 md:mx-auto hidden md:block">{slide.description}</p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full transition duration-300 ease-in-out">
+              <p className="text-lg md:text-xl lg:text-2xl mb-6 md:w-7/12 md:mx-auto hidden md:block">{slide.description}</p>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-1 rounded-full transition duration-300 ease-in-out">
                 <Link to='/services'>
                   {slide.buttonText}
                 </Link>

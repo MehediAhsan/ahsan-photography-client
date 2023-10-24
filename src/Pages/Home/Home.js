@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
                 <div className='flex justify-center'>
                     <Link to='/services'>
-                        <button className='flex items-center justify-center h-10 px-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-orange-600 focus:shadow-outline focus:outline-none mr-5'>
+                        <button className='flex items-center justify-center h-10 px-3 font-medium tracking-wide text-white transition duration-200 rounded-full shadow-md bg-orange-500 hover:bg-orange-600 focus:shadow-outline focus:outline-none mr-5'>
                         <span className="mr-1">See All</span>
                         <FaArrowRight className='h-4 w-4 text-white'></FaArrowRight>
                         </button>
