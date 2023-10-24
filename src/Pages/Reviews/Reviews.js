@@ -59,7 +59,7 @@ const Reviews = ({service}) => {
     }, [_id, reviews])
 
     return (
-        <div className='border border-orange-200 lg:w-9/12 mx-auto shadow-lg p-6 mb-10'>
+        <div className='border border-orange-200 md:w-8/12 mx-auto shadow-lg p-6 mb-10'>
             {
                 loader && <Loader></Loader>
             }
@@ -99,6 +99,7 @@ const Reviews = ({service}) => {
                 :
                 <div className='text-center underline text-blue-500 font-semibold text-xl mt-10'>
                     <Link to='/login' state={{from:location}} replace>
+                        <span className='text-black no-underline mr-5'>Do you want to add a review?</span>
                         Please login to add a review
                     </Link>
                 </div>
